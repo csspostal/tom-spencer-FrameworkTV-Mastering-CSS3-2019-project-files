@@ -1,0 +1,106 @@
+/* exercise 2 mastering css style sheet */
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/jeronimo-bernot-259463-unsplash.jpg");
+  /* Set a specific height */
+  height: 40%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+    
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+    
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* make image scale down but not scale larger than original size */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* style for h1 and h3 titles */
+
+h1, h3 {
+    
+    font-family: cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+/* class style for h3 tags but only contained in paragaphs <P> */
+
+.dream   {
+    text-align: center;
+    background-color: darkslategray;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    font-size: 1.24em;
+    word-spacing: 1.14em;
+}
+
+/*style to float left col to left and right col to the rige underneath hero image */
+
+#left-col   {
+    width: 45%;
+    float: left;
+    padding: 2.5%;
+    background-color: rgba(0, 0, 0, .72);
+    
+    
+}
+
+#right-col  {
+    width: 45%;
+    float: right;
+    padding: 2.5%
+}
+
+#main-content   {
+    
+    clear: both;
+}
+
+footer  {
+    float: left;
+    padding-left: 19%;
+    padding-right: 19%;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    background-color: black;
+    
+}
+
+cite    {
+    
+   color: white;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+p   {
+    
+    font-family: Verdana;
+    font-size: 1.23em;
+    line-height: 1.3em;
+    color: cadetblue;
+}

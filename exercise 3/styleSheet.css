@@ -1,0 +1,110 @@
+/* exercise 3 mastering css style sheet */
+
+body, html {
+    height: 100%;
+}
+
+body {
+    
+    color: #ffffff;
+    font-family: 'Verdana';
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#content    {
+    
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100px, auto;)
+    
+    margin: 0 auto;
+    height: 100%;
+    
+    
+}
+
+#content > *    {
+    
+    background: darkgray;
+    color: #000000;
+    
+    
+}
+
+#airline    {
+    
+    grid-column: 1/3;
+    
+    
+}
+
+#flightNo    {
+    
+    grid-column: 3/5;
+    
+    
+}
+
+#to {
+    
+    grid-column: 5/7;
+    
+}
+
+#time   {
+    
+    grid-column: 7/9;
+    
+}
+
+#gate   {
+    
+    grid-column: 9/11;
+}
+
+#status {
+    
+    grid-column: 11/13;
+}
+
+p {
+    
+    margin: 0;
+    padding-top: .85em;
+    padding-bottom: .85em;
+    font-weight: bold;
+}
+
+p:nth-child(odd) {
+  background: lightgray;
+    
+}
+
+p:nth-child(even) {
+  background: white;
+}
+
+.onTime {
+    
+    text-transform: uppercase;
+    color: yellowgreen;
+    font-weight: bold;
+    
+}
+
+.boardn {
+    
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.delayTime {
+    color: crimson;
+    font-weight: bold;
+}
+
+h4  {
+    
+    text-transform: uppercase;
+}

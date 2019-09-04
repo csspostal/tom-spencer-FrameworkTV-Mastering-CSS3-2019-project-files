@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <title>CSS for Forms</title>
+        
+        <style>
+        
+            #container  {
+            
+                margin: 5px;
+                padding: 5px;
+                
+            }
+            
+            form    {
+                
+                width: 80%;
+                border: 1px solid black;
+                padding: 10px;
+                background-color: #fafafa;
+            }
+            
+            input   {
+                width: 100%;
+                height: 35px;
+                margin-bottom: 20px;
+                font-size: 1.75em;
+                background-color: #ececec;
+                border: none;
+                border-bottom: 2px dashed black;
+            }
+            
+            
+            select {
+                
+                width: 100%;
+                font-size: 1.75em;
+                background-color: #ececec;
+                border: none;
+            }
+            
+            input[type=checkbox]    {
+                
+                width: 20px;
+                height: 20px;
+                zoom: 2;
+            }
+            
+            form p  {
+                
+                font-family: arial;
+                font-size: 1.5em;
+            }
+            
+            button  {
+                
+                width: 100%;
+                height: 50px;
+                font-size: 1.75em;
+                background-color: orange;
+                border-radius: 10px;
+                
+                
+            }
+            
+        </style>
+        
+    </head>
+    
+    
+    <body>
+    
+        <div id="container">
+        
+            <h2> Learn To Code</h2>
+            
+            <form action="#" method="post">
+            
+                <input type="text" id="first" placeholder="First Name" />
+                
+                <br/>
+                
+                <input type="text" id="last" placeholder="Last Name" />
+                
+                <br/>
+                
+                <input type="email" id="email" placehodler="Email Address" />
+                
+                <br/>
+                
+                <input type="Phone" id="phone" placeholder="Phone Number" />
+                
+                <br>
+                
+                <select>
+                
+                    <option>Level of Education</option>
+                    <option>Did Not Graduate</option>
+                    <option>High School or GED</option>
+                    <option>Some College</option>
+                    <option>Undergraduate Degree</option>
+                    <option>Graduate Degree</option>
+                    
+                </select>
+                
+                <br/>
+                
+                <p>
+                
+                    <input type="checkbox">Please send additonal information about learning to code.
+                    <br/>
+                    <button>Submit</button>
+                
+                </p>
+                
+            </form>
+            
+        </div>
+                
+        
+    </body>
+    
+</html>

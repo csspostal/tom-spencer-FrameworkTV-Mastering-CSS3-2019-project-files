@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <title>CSS for Forms</title>
+        
+        <style>
+        
+            #container  {
+            
+                margin: 5px;
+                padding: 5px;
+                
+            }
+            
+            form    {
+                
+                width: 80%;
+                border: 1px solid black;
+                padding: 10px;
+                background-color: #fafafa;
+            }
+            
+            input   {
+                width: 100%;
+                height: 35px;
+                margin-bottom: 20px;
+                font-size: 1.75em;
+                background-color: #ececec;
+                border: none;
+                border-bottom: 2px dashed black;
+            }
+            
+            
+            select {
+                
+                width: 100%;
+                font-size: 1.75em;
+                background-color: #ececec;
+                border: none;
+            }
+            
+            input[type=checkbox]    {
+                
+                width: 20px;
+                height: 20px;
+                zoom: 2;
+            }
+            
+            label  {
+                
+                font-family: arial;
+                font-size: 1.5em;
+            }
+            
+            button  {
+                
+                width: 100%;
+                height: 50px;
+                font-size: 1.75em;
+                background-color: orange;
+                border-radius: 10px;
+                
+                
+            }
+            
+        </style>
+        
+    </head>
+    
+    
+    <body>
+    
+        <div id="container">
+        
+            <h2>Puppy School Registration Form</h2>
+            
+            <form action="#" method="post">
+            
+                <input type="text" id="ownersName" placeholder="Owners Name" />
+                
+                <br/>
+                
+                <input type="Phone" id="phone" placeholder="Phone Number" />
+                
+                <br/>
+                
+                <input type="email" id="email" placeholder="Email Address" />
+                
+                <br/>
+                
+                <input type="text" id="puppysName" placeholder="Puppy's Name" />
+                
+                <br/>
+                
+                <input type="date" id="birthday" />
+                
+                <br/>
+                
+                <input type="text" id="breed" placeholder="Breed Type" />
+                
+                <br/>
+                
+                <h3>Vaccinations</h3>
+                
+                <input type="checkbox" name="parvo" />
+                <label for="parvo">Parvo</label>
+                <input type="checkbox" name="distemper" />
+                <label for="distemper">Distemper</label>
+                <input type="checkbox" name="rabies" />
+                <label for="rabies">Rabies</label>
+                                                            
+                <h3>Refferal Type</h3>
+                
+                <select>
+                
+                    <option>How did you hear of our school?"</option>
+                    <option>Radio</option>
+                    <option>Driving By</option>
+                    <option>Friends/Neighbours</option>
+                    
+                    
+                </select>
+                
+                <br/>
+                
+                <br/>
+                    <button>Submit Registration</button>
+                
+               
+                
+            </form>
+            
+        </div>
+                
+        
+    </body>
+    
+</html>
